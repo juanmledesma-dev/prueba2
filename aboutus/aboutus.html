@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<title>About Us</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<h1>PROJECT</h1>
+
+<div class="menu">
+
+<a href="../../index.html">HOME</a>
+
+<a href="../../aboutus/aboutus.html">ABOUT US</a>
+
+<div class="dropdown">
+
+<a href="#">PROJECT PROGRESS ▾</a>
+
+<div class="dropdown-content">
+
+<a href="../../assignment/W01/W01.html">Assignment 1</a>
+<a href="../../assignment/W02/W02.html">Assignment 2</a>
+<a href="../../assignment/W03/W03.html">Assignment 3</a>
+<a href="../../assignment/EXI/EXI.html">Midterm Exam</a>
+<!--<a href="#">Week 3</a>
+<a href="#">Week 4</a>
+<a href="#">Week 5</a>-->
+
+</div>
+
+</div>
+
+<a href="../../finalproject/finalproject.html">FINAL PROJECT</a>
+
+</div>
+
+</div>
+
+<div class="section-box">
+
+<h2>ABOUT US</h2>
+
+<div class="team">
+
+<div class="card">
+
+<img src="../image/IMG-1.jpeg">
+
+<h3>Jacqueline Mayancela</h3>
+
+<p>
+Hi! I'm Jacqueline Mayancela, an industrial engineering stu dent and enthusiast of maker culture. I define myself by an insatiable curiosity and by my attention to those small details that make a great project stand out.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="../image/IMG-3.png">
+
+<h3>Tabata Vega</h3>
+
+<p>
+Hi! I'm Tabata Vega, a senior studying Industrial Engineering at the University of Cuenca. I love what I do and really enjoy working as part of a team to help others.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="../image/IMG-4.jpeg">
+
+<h3>Karen Leon</h3>
+
+<p>
+Hi! I'm Karen, an industrial engineering student focused on developing innovative and functional solutions.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="../image/IMG-2.png">
+
+<h3>Juan Mateo Ledesma Moncayo</h3>
+
+<p>
+A sixth-semester Industrial Engineering student at the University of Cuenca, Ecuador. I stand out for my agile and analytical approach to problem-solving.
+</p>
+
+</div>
+
+</div>
+
+</div>
+<script>
+document.querySelectorAll('.dropdown > a').forEach(menu => {
+  menu.addEventListener('click', function(e){
+    if(window.innerWidth <= 768){
+      e.preventDefault();
+      this.parentElement.classList.toggle('active');
+    }
+  });
+});
+</script>
+</body>
+</html>

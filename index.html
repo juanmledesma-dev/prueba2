@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UNIVERSITY PROJECT BLOG</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<h1>PROJECT</h1>
+
+<div class="menu">
+
+<a href="aboutus/aboutus.html">ABOUT US</a>
+
+<div class="dropdown">
+  <a href="#">PROJECT PROGRESS</a>
+
+  <div class="dropdown-content">
+    <a href="../../assignment/W01/W01.html">Assignment 1</a>
+    <a href="../../assignment/W02/W02.html">Assignment 2</a>
+    <a href="../../assignment/W03/W03.html">Assignment 3</a>
+    <a href="../../assignment/EXI/EXI.html">Midterm Exam</a>
+    <!--<a href="#">Week 3</a>
+    <a href="#">Week 4</a>
+    <a href="#">Week 5</a>-->
+  </div>
+</div>
+
+<a href="finalproject/finalproject.html">FINAL PROJECT</a>
+
+</div>
+
+</div>
+
+<div class="hero">
+
+<h2>UNIVERSITY PROJECT BLOG</h2>
+
+</div>
+<script>
+document.querySelectorAll('.dropdown > a').forEach(menu => {
+  menu.addEventListener('click', function(e){
+    if(window.innerWidth <= 768){
+      e.preventDefault();
+      this.parentElement.classList.toggle('active');
+    }
+  });
+});
+</script>
+</body>
+</html>
