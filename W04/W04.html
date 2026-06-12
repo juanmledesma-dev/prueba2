@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Assignment 04 - PCB Design and Digital Manufacturing</title>
+
+<link rel="stylesheet" href="../../css/styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+
+<div class="navbar">
+
+<h1>PROJECT</h1>
+
+<div class="menu">
+
+<a href="../../index.html">HOME</a>
+
+<a href="../../aboutus/aboutus.html">ABOUT US</a>
+
+<div class="dropdown">
+
+<a href="#">PROJECT PROGRESS ▾</a>
+
+<div class="dropdown-content">
+
+<a href="../../assignment/W01/W01.html">Assignment 1</a>
+<a href="../../assignment/W02/W02.html">Assignment 2</a>
+<a href="../../assignment/W03/W03.html">Assignment 3</a>
+<a href="../../assignment/W04/W04.html">Assignment 4</a>
+
+</div>
+
+</div>
+
+<a href="../../finalproject/finalproject.html">FINAL PROJECT</a>
+
+</div>
+
+</div>
+
+<!-- ===== HERO ===== -->
+
+<section class="hero">
+
+<div>
+
+<h2>PCB Design and Digital Manufacturing</h2>
+
+<p>
+Sequential LED Roulette Project
+</p>
+
+</div>
+
+</section>
+
+<!-- ===== INTRODUCTION ===== -->
+
+<div class="section-box">
+
+<h2>📘 Project Overview</h2>
+
+<p>
+This project focused on the complete design, manufacturing, assembly, and validation of a custom Printed Circuit Board (PCB) integrated into a digital manufacturing workflow.
+</p>
+
+<p>
+The objective was to develop a sequential LED roulette system by combining electronics, programming, PCB fabrication, laser machining, 3D printing, and final assembly processes.
+</p>
+
+
+
+</div>
+
+<!-- ===== MATERIALS ===== -->
+
+<div class="section-box">
+
+<h2>🧰 Materials, Software and Equipment</h2>
+
+<h3>Materials</h3>
+
+<ul>
+<li>Fiberglass Copper PCB</li>
+<li>Arduino Nano V3.0 CH340</li>
+<li>LEDs</li>
+<li>220 Ω Resistors</li>
+<li>Headers</li>
+<li>Solder</li>
+<li>PLA Filament</li>
+<li>3 mm Acrylic Sheet</li>
+</ul>
+
+<h3>Software</h3>
+
+<ul>
+<li>KiCad 10</li>
+<li>Wokwi</li>
+<li>Arduino IDE</li>
+<li>Fusion 360</li>
+<li>Prusa Slicer</li>
+</ul>
+
+<h3>Equipment</h3>
+
+<ul>
+<li>HS-FLC Laser Machine</li>
+<li>Bench Drill</li>
+<li>Soldering Station</li>
+<li>PRUSA 3D Printer</li>
+<li>Laser Cutter</li>
+</ul>
+
+</div>
+
+<!-- ===== CIRCUIT DESIGN ===== -->
+
+<div class="section-box">
+
+<h2>⚡ Circuit Design and Simulation</h2>
+
+<p>
+The first stage consisted of creating the electronic schematic and validating the logic through simulation.
+</p>
+
+<h3>Step 1: Conceptualization and Schematic Design (KiCad)</h3>
+<p>
+
+The project began with a preliminary sketch to define the circuit architecture. This was then transferred to the KiCad 10.0 Schematic environment. At this stage, the connection diagram was created, ensuring the correct polarization of the LEDs, the pin assignments for the Arduino Nano, and the sizing of the 220-ohm resistors to protect the components against overcurrent.
+</p>
+<div class="blog-image">
+<img src="../../image/semana4-1.png">
+<div class="preview">
+<img src="../../image/semana4-1.png">
+</div>
+</div>
+
+<h3>Step 2: Algorithm Programming (Arduino IDE)</h3>
+<p>
+The firmware was developed in the Arduino IDE to manage the roulette wheel's logic. The code structures the timing (delay) functions, the sequential power-up logic, the loops, and the visual effects that emulate the physical deceleration of a real roulette wheel.
+</p>
+<div class="blog-image">
+<img src="../../image/semana4-3.png">
+<div class="preview">
+<img src="../../image/semana4-3.png">
+</div>
+</div>
+
+<h3>Step 3: Virtual Validation (Wokwi)</h3>
+<p>
+    Before proceeding with the acquisition of materials, the circuit and code were integrated into the Wokwi cloud simulator. This platform allowed us to verify the dynamic behavior of the algorithm, confirm that the logic loops responded correctly, and mitigate errors in pin addressing without risk of damaging physical components.
+</p>
+<div class="blog-image">
+<img src="../../image/semana4-2.png">
+<div class="preview">
+<img src="../../image/semana4-2.png">
+</div>
+</div>
+
+
+</div>
+
+<!-- ===== PCB LAYOUT ===== -->
+
+<div class="section-box">
+
+<h2>📐 VALIDATION AND LAYOUT DESIGN PHASE</h2>
+<h3>Step 4: Rapid Prototyping on a Breadboard</h3>
+<p>
+With the virtual simulation approved, a physical control assembly was built on a breadboard. The physical Arduino Nano and the LED matrix were connected to empirically validate the firmware stability, initial current consumption, and the actual behavior of the hardware components.
+</p>
+
+<div class="blog-image">
+<img src="../../image/semana4-4.png">
+<div class="preview">
+<img src="../../image/semana4-4.png">
+</div>
+</div>
+<h3>Step 5: PCB Routing and Customization (KiCad Layout)</h3>
+<p>
+Once the circuit was validated, the PCB design was carried out using KiCad PCB New. The key steps in this sub-phase were:
+<p>
+  ● Footprint Configuration: Precise selection of component footprints, ensuring that the diameter of the pads (holes) and traces met standardized industrial dimensions for mechanical clamping and subsequent soldering.  
+</p>
+
+● Aesthetic Layout: The components were arranged in a concentric circular geometry to symmetrically simulate the roulette wheel.
+</p>
+<p>
+● Branding and Identification: Text was added to the copper layer/silkscreen, including the developers' names and the FABLAB Cuenca logo.
+</p>
+
+
+</div>
+
+<!-- ===== MANUFACTURING ===== -->
+
+<div class="section-box">
+
+<h2>🏭 MANUFACTURING PHASE</h2>
+<h3>
+    Step 6: Exporting and Preparing Files
+</h3>
+<p>
+The final track design was exported in high-resolution image format (monochrome PNG) and vectors, the standard required for interpreting paths in industrial engraving machinery.
+</p>
+
+
+
+<h3>Step 7: Trace Isolation by Laser Etching (HS-FLC Machine)</h3>
+<p>
+    The fiberglass-based copper board was processed on the HS-FLC solid-state/fiber etching machine. In this stage, the laser selectively etched and vaporized the excess copper sections to isolate the conductive traces.
+Due to the emission of microparticles and light radiation, the process was performed using mandatory UV/laser protective goggles, a high-efficiency particulate respirator, and a lab coat.
+</p>
+
+<div class="blog-image">
+<img src="../../image/semana4-5.png">
+<div class="preview">
+<img src="../../image/semana4-5.png">
+</div>
+</div>
+<div class="blog-image">
+<img src="../../image/semana4-6.png">
+<div class="preview">
+<img src="../../image/semana4-6.png">
+</div>
+</div>
+<h3>
+    Step 8: Continuity Inspection and Edge Finishing
+</h3>
+<p>
+    At the end of the laser cycle, a visual and multimeter inspection was performed to verify that the path insulation was perfect. Subsequently, a mini-grinder with fine sandpaper was used to smooth the edges of the board and remove imperfections, handling the piece with care to avoid skin contact or inhalation of fiberglass dust.
+</p>
+<div class="blog-image">
+<img src="../../image/semana4-7.png">
+<div class="preview">
+<img src="../../image/semana4-7.png">
+</div>
+</div>
+
+<h3>
+    Step 9: Drilling Through-Pairs Using a Bench Drill
+</h3>
+<p>
+    The board was moved to the bench drill (table drill) to drill the holes where the component pins would be inserted (THT technology). It was verified beforehand that the drill bits corresponded exactly to the diameter of the Arduino and LED pins, taking care not to lift the peripheral copper pad to ensure optimal contact area during soldering.
+</p>
+<div class="blog-image">
+<img src="../../image/semana4-8.png">
+<div class="preview">
+<img src="../../image/semana4-8.png">
+</div>
+</div>
+</div>
+
+<!-- ===== ASSEMBLY ===== -->
+
+<div class="section-box">
+
+<h2>🔧 ASSEMBLY, SOLDERING, AND FUNCTIONAL TESTING PHASE</h2>
+<h3>
+    Step 10: Component Insertion and Precision Soldering
+</h3>
+<p>
+The components (LEDs, resistors, connectors, and the microcontroller) were positioned in their respective sockets, respecting the polarity indicated in the sketch. Using a soldering iron, the solder was applied to each joint. The goal was to obtain a concave and bright meniscus at each solder point, ensuring that the solder flowed correctly between the component lead and the copper trace on the PCB without creating short circuits.
+</p>
+
+<div class="blog-image">
+<img src="../../image/semana4-9.png">
+<div class="preview">
+<img src="../../image/semana4-9.png">
+</div>
+</div>
+<h3>
+    Step 11: Final Quality Control and Commissioning
+</h3>
+<p>
+    With the circuit fully assembled, the Arduino Nano was powered via a power supply. The routine test was executed, successfully validating that the physical hardware responded accurately to the cyclic and timing sequence programmed in the code. The circuit was then ready to be integrated into its final case, designed in SolidWorks/AutoCAD and manufactured using 3D printing and laser cutting.
+</p>
+<div class="blog-image">
+<img src="../../image/semana4-10.png">
+<div class="preview">
+<img src="../../image/semana4-10.png">
+</div>
+</div>
+
+
+
+</div>
+
+<!-- ===== 3D PRINTING ===== -->
+
+<div class="section-box">
+
+<h2>🖨️ Hybrid Case Manufacturing</h2>
+<h3>
+    Parametric Design Phase
+</h3>
+<h3>
+    Step 1: Analog Conceptualization and Requirements
+</h3>
+<p>
+The process began with a freehand sketch to define the critical dimensions of the enclosure. Three fundamental requirements were established:
+</p>
+<p>
+    ● Precise housing for the PCB.
+</p>
+<p>
+    ● Ergonomic access for the Arduino Nano power cable.
+</p>
+<p>
+    ● Closure system using a transparent top cover.
+</p>
+<h3>
+    Step 2: 3D Modeling in Fusion 360
+</h3>
+<p>
+    The design was transferred to Fusion 360 software using a parametric workflow. At this stage, the following engineering solutions were integrated:
+</p>
+<p>
+    ● Tolerance and Kerf Management: The kerf (offset margin) was calculated to ensure a stable fit for the PCB, preventing internal displacement or vibration.
+</p>
+<p>
+    ● Interface Design: A specific hole was extruded for the USB/Power cable exit.
+</p>
+<p>
+    ● Lid Housing: A perimeter recess or internal step was designed on the top of the case, acting as a mechanical support so that the acrylic lid rests perfectly level with the outer edge.
+</p>
+<div class="blog-image">
+<img src="../../image/semana4-11.png">
+<div class="preview">
+<img src="../../image/semana4-11.png">
+</div>
+</div>
+<p>
+
+</p>
+<div class="blog-image">
+<img src="../../image/semana4-12.png">
+<div class="preview">
+<img src="../../image/semana4-12.png">
+</div>
+</div>
+<div class="blog-image">
+<img src="../../image/semana4-13.png">
+<div class="preview">
+<img src="../../image/semana4-13.png">
+</div>
+</div>
+<h2>
+    ADDITIVE MANUFACTURING PHASE (3D PRINTING)
+</h2>
+<h3>
+    Step 3: G-Code Preparation (Prusa Slicer)
+</h3>
+<p>
+    The digital model was exported in STL format and processed in the Prusa Slicer slicing software. The printing parameters were configured to be optimized for PLA material, ensuring good bed adhesion and a layer resolution that guarantees the structural strength of the internal step.
+</p>
+
+<h3>
+    Step 4: Production on the PRUSA Printer
+</h3>
+<p>
+    The main body of the case was manufactured on the PRUSA printer. During this process, thermal stability was monitored to prevent deformations that could compromise the fit of the PCB or the top cover.
+</p>
+<div class="blog-image">
+<img src="../../image/semana4-14.png">
+<div class="preview">
+<img src="../../image/semana4-14.png">
+</div>
+</div>
+<div class="blog-image">
+<img src="../../image/semana4-15.png">
+<div class="preview">
+<img src="../../image/semana4-15.png">
+</div>
+</div>
+</div>
+
+<!-- ===== LASER CUTTING ===== -->
+
+<div class="section-box">
+
+<h2>✂️ CUSTOMIZATION PHASE (LASER CUTTING)</h2>
+<h3>
+    Step 5: Lid Preparation in RDWorks
+</h3>
+<p>
+While the printer finished the case body, work was done on the top lid. Using RDWorks software, the design for the 3mm acrylic lid was imported.
+</p>
+<p>
+    ● Laser Kerf Compensation: The cutting contour was adjusted considering the laser beam diameter, ensuring a smooth interference fit with the printed case.
+</p>
+<p>
+    ● Visual Identity Engraving: An engraving layer (raster) was configured to display a representative image and the designers' credits, adding aesthetic value and authorship to the final product.
+</p>
+
+<div class="blog-image">
+<img src="../../image/semana4-16.png">
+<div class="preview">
+<img src="../../image/semana4-16.png">
+</div>
+</div>
+<div class="blog-image">
+<img src="../../image/semana4-17.png">
+<div class="preview">
+<img src="../../image/semana4-17.png">
+</div>
+</div>
+<h3>
+    Step 6: Execution on CNC Laser Cutter
+</h3>
+<p>
+    The acrylic sheet was placed in the laser cutter. The power and speed parameters were calibrated to obtain a clean cut (without burning) and a crisp engraving on the surface of the material.
+</p>
+<div class="blog-image">
+<img src="../../image/semana4-18.png">
+<div class="preview">
+<img src="../../image/semana4-18.png">
+</div>
+</div>
+
+
+</div>
+
+<!-- ===== FINAL RESULT ===== -->
+
+<div class="section-box">
+
+<h2>✅ FINAL ASSEMBLY PHASE</h2>
+<h3>
+    Step 7: Assembly and Validation
+</h3>
+<p>
+    With all the parts manufactured, the final assembly was carried out:
+</p>
+<p>
+    1. Circuit Installation: The PCB board was inserted into the printed circuit board, verifying that the LEDs were aligned and that the power port matched the designed hole.
+</p>
+<p>
+    2. Sealing with Acrylic Cover: The engraved cover was placed over the internal step. Thanks to the prior kerf calculation in both processes (printing and laser engraving), the cover remains firmly in place, protecting the components and allowing the roulette wheel's light sequence to be viewed.
+</p>
+<div class="blog-image">
+<img src="../../image/semana4-19.png">
+<div class="preview">
+<img src="../../image/semana4-19.png">
+</div>
+</div>
+<div class="blog-image">
+<img src="../../image/semana4-20.png">
+<div class="preview">
+<img src="../../image/semana4-20.png">
+</div>
+</div>
+
+
+
+</div>
+
+<!-- ===== VIDEO ===== -->
+
+<!-- ===== DOWNLOAD FILES ===== -->
+
+<div class="section-box">
+
+<h2>📁 Download Files</h2>
+
+<p>
+The complete report and supporting files used during this assignment can be downloaded below.
+</p>
+
+<div class="dataset-list">
+
+<a href="projectarduino.kicad_pro" download class="Kicad models">
+📁 Download models
+</a>
+
+<a href="projectarduino.kicad_sch" download class="Kicad models">
+📁Download models
+
+<a href="projectarduino-Edge_Cuts.svg" download class="dataset-card">
+📁 Download models
+<a href="projectarduino-F_Cu.svg" download class="dataset-card">
+📁 Download models
+</div>
+
+</div>
+
+<!-- ===== DOWNLOADS ===== -->
+
+
+
+<script>
+
+document.querySelectorAll('.dropdown > a').forEach(menu => {
+
+menu.addEventListener('click', function(e){
+
+if(window.innerWidth <= 768){
+
+e.preventDefault();
+
+this.parentElement.classList.toggle('active');
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
